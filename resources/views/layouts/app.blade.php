@@ -48,9 +48,20 @@
 
 <body class="m-0 p-0 overflow-x-hidden scroll-smooth">
 
+
+    @include('partials.header')
+
     <main>
         @yield('content')
     </main>
+
+    @include('partials.footer')
+
+    @include('partials.searchbar')
+
+
+
+
 
     <!-- WhatsApp Button -->
     <div id="whatsappBtn" class="fixed bottom-6 left-6 z-50 hidden">
@@ -82,6 +93,18 @@
             }
         });
     </script>
+
+    <script>
+        const openSearchBtn = document.getElementById("openSearchBtn");
+        const searchOverlay = document.getElementById("searchOverlay");
+
+        if (openSearchBtn) {
+            openSearchBtn.addEventListener("click", () => {
+                searchOverlay.classList.remove("hidden");
+            });
+        }
+    </script>
+
 
 </body>
 
