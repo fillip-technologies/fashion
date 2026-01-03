@@ -14,8 +14,12 @@ Route::get('/yarn-story', function () {
     return view('pages.yarnstory');
 });
 
-
 Route::get('/journey', function () {
     return view('pages.journey');
 });
+
+Route::get('/lookbook', function () {
+    return view('pages.lookbook');
+});
+
 

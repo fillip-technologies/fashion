@@ -26,6 +26,9 @@
                         secondary: '#97A0A1',
                         tertiary: "#D2C9D5",
                         background: "#F2F2F2"
+                    },
+                    backgroundImage: {
+                        'dash-dot': 'repeating-linear-gradient(to right, rgba(0,0,0,0.4) 0 8px, transparent 8px 12px, rgba(0,0,0,0.4) 12px 20px, transparent 20px 24px, rgba(0,0,0,0.4) 24px 26px, transparent 20px 30px)',
                     }
                 }
             }
