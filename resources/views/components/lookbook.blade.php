@@ -1,5 +1,5 @@
 <section class="bg-background min-h-screen text-black relative">
-
+    
     <img src="{{ asset('assets/images/lookbook/fruit.png') }}" alt="Back"
         class="w-[120px] h-[120px] md:h-[140px] absolute -top-5 left-10 md:left-56" />
 
@@ -37,21 +37,20 @@
     </div>
 
 
-
     <div class="mt-16 md:mt-20 w-full h-px bg-dash-dot"></div>
 
     <div class="mt-12 grid grid-cols-1 md:grid-cols-2
             max-w-5xl mx-auto min-h-[520px]">
 
         <div class="flex justify-end self-start">
-            <div class="aspect-video w-full max-w-md -mr-20">
+            <div class="aspect-video w-full max-w-md md:-mr-20">
                 <img src="{{ asset('assets/images/lookbook/one.png') }}" alt="Lookbook One"
                     class="w-full h-full object-contain" />
             </div>
         </div>
 
         <div class="flex justify-start self-end pb-12">
-            <div class="aspect-video w-full max-w-md -ml-20">
+            <div class="aspect-video w-full max-w-md md:-ml-20">
                 <img src="{{ asset('assets/images/lookbook/two.png') }}" alt="Lookbook Two"
                     class="w-full h-full object-contain" />
             </div>
@@ -70,19 +69,19 @@
         </div>
     </div>
 
-
+    
     <div class="mt-12 grid grid-cols-1 md:grid-cols-2
           mx-auto min-h-[520px] relative">
 
         <div class="flex justify-end self-end">
-            <div class="aspect-video w-full max-w-md -mr-20 -translate-y-14">
+            <div class="aspect-video w-full max-w-md md:-mr-20 -translate-y-14">
                 <img src="{{ asset('assets/images/lookbook/four.png') }}" alt="Lookbook One"
                     class="w-full h-full object-contain" />
             </div>
         </div>
 
         <div class="flex justify-start self-start pb-12">
-            <div class="aspect-video w-full max-w-md -ml-20">
+            <div class="aspect-video w-full max-w-md md:-ml-20">
                 <img src="{{ asset('assets/images/lookbook/five.png') }}" alt="Lookbook Two"
                     class="w-full h-full object-contain" />
             </div>
