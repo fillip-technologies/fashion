@@ -44,6 +44,11 @@
         html {
             scroll-behavior: smooth;
         }
+
+        .cookie-reset {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
     </style>
 
     <link rel="icon" href="{{ asset('images/cm-removebg-preview.png') }}" type="image/x-icon">
@@ -61,6 +66,8 @@
     @include('partials.footer')
 
     @include('partials.searchbar')
+
+    @include('partials.cookies')
 
 
 
@@ -107,6 +114,39 @@
             });
         }
     </script>
+
+    <script>
+        const cookieConsent = document.getElementById("cookieConsent");
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+
+                const cookieDecision = localStorage.getItem("cookieConsent");
+                if (!cookieDecision) {
+                    cookieConsent.classList.remove("hidden");
+                }
+
+            }, 2000);
+        });
+
+        function acceptCookies() {
+            localStorage.setItem("cookieConsent", "accepted");
+            closeCookiePopup();
+        }
+
+        function rejectCookies() {
+            closeCookiePopup();
+        }
+
+        function customiseCookies() {
+            localStorage.setItem("cookieConsent", "customised");
+            closeCookiePopup();
+        }
+
+        function closeCookiePopup() {
+            cookieConsent.classList.add("hidden");
+        }
+    </script>
+
 
 
 </body>
